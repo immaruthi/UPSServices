@@ -33,5 +33,12 @@ namespace RMG.Controllers
             return context.getLoginData(Emp_Id);
         }
 
+        [HttpGet("[action]")]
+        public bool InsertUser(String firstName, String lastName, String userName, String password)
+        {
+            //LoginContext context = HttpContext.RequestServices.GetService(typeof(RMG.Models.LoginContext)) as LoginContext;
+            return true; //context.ValidateUserId(userId);
+        }
+
     }
 }
